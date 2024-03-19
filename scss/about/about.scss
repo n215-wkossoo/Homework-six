@@ -1,0 +1,241 @@
+.wrapper {
+
+    padding: 10px;
+    //background-color: indianred;
+    margin: auto;
+    max-width: $content-width;
+
+
+    .about-text-container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        margin-top: 183px;
+
+        .about-header {
+            font-family: ProximaNova;
+            font-size: 45px;
+            padding-bottom: 20px;
+
+
+            .hori-line {
+                border: none;
+                height: 2px;
+                width: 125px;
+                background-color: $site-black;
+
+            }
+        }
+
+
+        .about-text-callout {
+            font-family: GillSansregular;
+            font-size: 16px;
+            max-width: 980px;
+            // height: 96px;
+            text-align: left;
+            max-width: $content-width;
+            //   background-color: indigo;
+        }
+
+    }
+
+    .quotes-container {
+        //max-width: $home-content-width;
+        // background-color: antiquewhite;
+
+        margin-top: 95px;
+
+
+
+        .quotes-header {
+            width: 345px;
+            height: 53px;
+            font-family: ProximaNova;
+            font-size: 35px;
+            font-weight: thin;
+            margin-bottom: 10px;
+
+            .quote-line {
+                border: none;
+                height: 2px;
+                width: 230px;
+                background-color: $site-black;
+
+            }
+        }
+
+        .quotes-information1-box {
+            display: flex;
+
+            //justify-content: space-between;
+            //flex-wrap: wrap;
+            //background-color: orange;
+            width: 722px;
+            height: 150px;
+            //  background-color: aqua;
+
+
+            .quotes-image-container {
+                background-image: url(../images/about-client-01.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 260px;
+                height: 150px;
+                margin-right: 21px;
+
+            }
+
+
+            .quotes-image-container2 {
+                background-image: url(../images/about-client-02.jpg);
+
+
+            }
+
+            .quote-text1 {
+
+                height: 102px;
+
+                font-size: 16px;
+                font-family: GillSansItalic;
+                //background-color: cadetblue;
+                padding-top: 30px;
+                width: 385px;
+
+
+                .owner {
+                    width: 176px;
+                    height: 27px;
+                    margin-left: 270px;
+                    color: $site-blue;
+                    font-size: 20px;
+                    font-family: ProximaNova;
+
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+    // reudinf the length 
+
+    .quotes-container2 {
+        margin-top: 37px;
+    }
+
+
+}
+
+
+.footer-about-box {
+    margin-top: 179px;
+}
+
+
+@media all and (max-width: 800px) {
+
+    .wrapper {
+
+
+        .quotes-container {
+            max-width: $home-content-width;
+            //  background-color: antiquewhite;
+            margin-top: 95px;
+
+
+
+
+            .quotes-header {
+                width: 345px;
+                height: 53px;
+                font-family: ProximaNova;
+                font-size: 35px;
+                font-weight: thin;
+                margin-bottom: 10px;
+
+                .quote-line {
+                    border: none;
+                    height: 2px;
+                    width: 230px;
+                    background-color: $site-black;
+
+                }
+            }
+
+            .quotes-information1-box {
+                display: flex;
+
+                //justify-content: space-between;
+                //flex-wrap: wrap;
+                //   background-color: orange;
+                // max-width: 722px;
+                width: 100%;
+                // min-height: 100px;
+
+
+                //height: 150px;
+                // background-color: rebeccapurple;
+
+
+
+                .quotes-image-container {
+                    background-image: url(../images/about-client-01.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 260px;
+                    height: 150px;
+                    margin-right: 21px;
+
+                }
+
+
+                .quotes-image-container2 {
+                    background-image: url(../images/about-client-02.jpg);
+
+
+                }
+
+                .quote-text1 {
+
+                    //height: 102px;
+
+                    font-size: 16px;
+                    font-family: GillSansItalic;
+                    // background-color: cadetblue;
+                    padding-top: 30px;
+                    width: 50%;
+                    // max-width: 385px;
+
+                    // width: calc(100%-281px);
+
+
+
+                    .owner {
+
+                        //max-width: 175px;
+
+                        //height: 27px;
+                        width: 175px;
+                        margin-left: 270px;
+                        color: $site-blue;
+                        font-size: 20px;
+                        font-family: ProximaNova;
+                        // background-color: azure;
+                        // margin-left: -100px;
+
+                    }
+                }
+            }
+
+        }
+    }
+}

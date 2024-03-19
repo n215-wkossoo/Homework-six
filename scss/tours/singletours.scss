@@ -1,0 +1,316 @@
+.wrap-tours {
+
+    padding: 10px;
+    //  background-color: indianred;
+    margin: auto;
+    max-width: $content-width;
+
+
+    .isreal-box-container {
+        @include isreal-box-container();
+
+
+        .isreal-box-img {
+            @include isreal-box-img("../images/tour-01.jpg");
+
+
+
+
+            .isreal-box-title {
+                @include isreal-box-title();
+                font-family: GillSansregular;
+                font-size: 50px;
+                left: 5%;
+                top: 5%;
+            }
+
+
+            .starting-price-box {
+                @include starting-price-box();
+                font-family: GillSansregular;
+                font-size: 20px;
+                left: 62%;
+                top: 92%;
+            }
+
+
+        }
+
+        //indiviual tour images
+        .tour2 {
+            @include isreal-box-img("../images/tour-02.jpg");
+        }
+
+        .tour3 {
+            @include isreal-box-img("../images/tour-03.jpg");
+        }
+
+        .tour4 {
+            @include isreal-box-img("../images/tour-04.jpg");
+        }
+
+        .tour5 {
+            @include isreal-box-img("../images/tour-05.jpg");
+        }
+
+        .tour6 {
+            @include isreal-box-img("../images/tour-06.jpg");
+        }
+
+        .tour7 {
+            @include isreal-box-img("../images/tour-07.jpg");
+        }
+
+        .tour8 {
+            @include isreal-box-img("../images/tour-08.jpg");
+        }
+
+        .tour9 {
+            @include isreal-box-img("../images/tour-09.jpg");
+        }
+    }
+
+
+
+    .tour-mini-images-box {
+
+        @include tour-mini-images-box();
+
+        .tour-mini-one {
+            @include tour-mini-one("../images/israel-tour-01.jpg");
+        }
+
+
+        .tour-mini-two {
+            @include tour-mini-one("../images/israel-tour-02.jpg");
+        }
+
+        .tour-mini-three {
+            @include tour-mini-one("../images/israel-tour-03.jpg");
+        }
+
+        //individal mini tour images
+        .mini-tour2-one {
+            @include tour-mini-one("../images/usa-tour-01.jpg");
+        }
+
+        .mini-tour2-two {
+            @include tour-mini-one("../images/usa-tour-02.jpg");
+        }
+
+        .mini-tour2-three {
+            @include tour-mini-one("../images/usa-tour-03.jpg");
+        }
+
+
+
+        .mini-tour3-one {
+            @include tour-mini-one("../images/aus-tour-01.jpg");
+        }
+
+        .mini-tour3-two {
+            @include tour-mini-one("../images/aus-tour-02.jpg");
+        }
+
+        .mini-tour3-three {
+            @include tour-mini-one("../images/aus-tour-03.jpg");
+        }
+
+        .mini-tour4-one {
+            @include tour-mini-one("../images/nz-tour-01.jpg");
+        }
+
+        .mini-tour4-two {
+            @include tour-mini-one("../images/nz-tour-02.jpg");
+        }
+
+        .mini-tour4-three {
+            @include tour-mini-one("../images/nz-tour-03.jpg");
+        }
+
+
+        .mini-tour5-one {
+            @include tour-mini-one("../images/france-tour-01.jpg");
+        }
+
+        .mini-tour5-two {
+            @include tour-mini-one("../images/france-tour-02.jpg");
+        }
+
+        .mini-tour5-three {
+            @include tour-mini-one("../images/france-tour-03.jpg");
+        }
+
+
+
+        .mini-tour6-one {
+            @include tour-mini-one("../images/egypt-tour-01.jpg");
+        }
+
+        .mini-tour6-two {
+            @include tour-mini-one("../images/egypt-tour-02.jpg");
+        }
+
+        .mini-tour6-three {
+            @include tour-mini-one("../images/egypt-tour-03.jpg");
+        }
+
+
+
+        .mini-tour7-one {
+            @include tour-mini-one("../images/japan-tour-01.jpg");
+        }
+
+        .mini-tour7-two {
+            @include tour-mini-one("../images/japan-tour-02.jpg");
+        }
+
+        .mini-tour7-three {
+            @include tour-mini-one("../images/japan-tour-03.jpg");
+        }
+
+        .mini-tour8-one {
+            @include tour-mini-one("../images/canada-tour-01.jpg");
+        }
+
+        .mini-tour8-two {
+            @include tour-mini-one("../images/canada-tour-02.jpg");
+        }
+
+        .mini-tour8-three {
+            @include tour-mini-one("../images/canada-tour-03.jpg");
+        }
+
+
+        .mini-tour9-one {
+            @include tour-mini-one("../images/uae-tour-01.jpg");
+        }
+
+        .mini-tour9-two {
+            @include tour-mini-one("../images/uae-tour-02.jpg");
+        }
+
+        .mini-tour9-three {
+            @include tour-mini-one("../images/uae-tour-03.jpg");
+        }
+    }
+
+    .isreal-package-text-box {
+
+
+        .dayInfo {
+
+            @include dayInfo();
+
+            .day-hl {
+                @include day-hl();
+            }
+        }
+
+        .day-text {
+
+            @include day-text();
+        }
+
+    }
+
+
+    .book-now-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .site-button {
+            @include learn-button();
+            color: white;
+
+        }
+    }
+}
+
+
+@media all and (max-width: 800px) {
+
+    .wrap-tours {
+
+
+
+        .isreal-box-container {
+            @include isreal-box-container();
+
+
+            .isreal-box-img {
+
+
+                .isreal-box-title {
+                    @include isreal-box-title();
+                    font-family: GillSansregular;
+
+
+                    left: 0%;
+                    top: 5%;
+
+                    font-size: 50px;
+
+                    // background-color: red;
+
+                }
+
+
+
+
+                .starting-price-box {
+                    @include starting-price-box();
+                    font-family: GillSansregular;
+                    font-size: 20px;
+                    left: 0%;
+                    top: 92%;
+                    // background-color: blue;
+                }
+
+
+            }
+
+        }
+
+
+        .tour-mini-images-box {
+
+            @include tour-mini-images-box();
+
+            flex-direction: column;
+
+            // background-color: aqua;
+
+        }
+
+
+
+
+
+
+        .isreal-package-text-box {
+
+
+            .dayInfo {
+
+                @include dayInfo();
+                font-size: 20px;
+
+                //background-color: pink;
+
+
+                .day-hl {
+                    @include day-hl();
+                }
+            }
+
+            .day-text {
+
+                @include day-text();
+                padding-bottom: 200px;
+            }
+
+        }
+    }
+}

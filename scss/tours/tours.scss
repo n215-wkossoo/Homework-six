@@ -1,0 +1,113 @@
+.wrap-tours {
+
+    padding: 10px;
+    //  background-color: indianred;
+    margin: auto;
+    max-width: $content-width;
+
+    .tour-main-img-box {
+        .tour-img {
+            @include tour-headerimg();
+
+            .tour-text {
+                color: white;
+                font-size: 50px;
+                font-family: GillSansregular;
+            }
+        }
+    }
+
+    .tour-countries-box {
+        max-width: $home-content-width;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .tour-countbox1 {
+            @include tour-box();
+
+            .tour-count-mini-img {
+                @include add-background-image("../images/tour-01.jpg");
+
+
+                .tour-name {
+                    @include tour-name();
+                }
+
+                .tour-price {
+                    @include tour-price();
+                }
+
+                .site-button {
+                    @include learn-button();
+                }
+            }
+
+            //Tour images
+            .t2 {
+                @include add-background-image("../images/tour-02.jpg");
+            }
+
+            .t3 {
+                @include add-background-image("../images/tour-03.jpg");
+            }
+
+            .t4 {
+                @include add-background-image("../images/tour-04.jpg");
+            }
+
+            .t5 {
+                @include add-background-image("../images/tour-05.jpg");
+            }
+
+            .t6 {
+                @include add-background-image("../images/tour-06.jpg");
+            }
+
+            .t7 {
+                @include add-background-image("../images/tour-07.jpg");
+            }
+
+            .t8 {
+                @include add-background-image("../images/tour-08.jpg");
+            }
+
+            .t9 {
+                @include add-background-image("../images/tour-09.jpg");
+            }
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media all and (max-width: 800px) {
+
+
+    .tour-countries-box {
+        max-width: $home-content-width;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+
+
+    }
+}
